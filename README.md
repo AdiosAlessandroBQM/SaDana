@@ -2,7 +2,7 @@
 
 <div align="center">
  <!-- Ganti 'path/to/your/logo.png' dengan path sebenarnya ke logo Anda -->
- <img src="https://via.placeholder.com/150/6366F1/FFFFFF?text=SADANA" alt="SADANA Logo" width="100" height="100">
+ <img src="https://github.com/AdiosAlessandroBQM/SaDana/blob/main/assets/logo.png" alt="SADANA Logo" width="700" height="700">
 
  [![Flutter](https://img.shields.io/badge/Flutter-Framework-blue.svg?logo=flutter)](https://flutter.dev/)
  [![License](https://img.shields.io/github/license/sadana/sadana-app)](LICENSE)
