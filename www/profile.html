@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil - Sistem Stok Warung</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <a href="dashboard.html" class="app-logo">
+                <span class="app-logo-icon">🏪</span>
+                <span>Stok Warung</span>
+            </a>
+        </div>
+        <nav class="sidebar-nav">
+            <a href="dashboard.html" class="nav-item"><span class="nav-icon">📊</span><span>Dashboard</span></a>
+            <a href="kasir.html" class="nav-item"><span class="nav-icon">💰</span><span>Kasir</span></a>
+            <a href="menu.html" class="nav-item"><span class="nav-icon">📦</span><span>Data Menu</span></a>
+            <a href="riwayat.html" class="nav-item"><span class="nav-icon">📜</span><span>Riwayat</span></a>
+        </nav>
+        <div class="sidebar-footer">
+             <div class="user-dropdown" id="userDropdown">
+                <a href="profile.html" class="dropdown-item active">👤 Profil Saya</a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item" id="dropdownLogout">🚪 Logout</a>
+            </div>
+            <div class="user-info" id="userInfoBtn">
+                <div class="user-avatar" id="userAvatar"></div>
+                <div class="user-details">
+                    <div class="user-name" id="userName"></div>
+                    <div class="user-role">Kasir</div>
+                </div>
+                <span>⌄</span>
+            </div>
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <h1 class="page-title">Profil Pengguna</h1>
+
+        <div class="profile-grid">
+            <div class="glass-card profile-header-card">
+                <div class="profile-avatar-large"></div>
+                <h2 id="profileName"></h2>
+                <p class="text-secondary">@<span id="profileUsername"></span></p>
+            </div>
+
+            <div class="glass-card">
+                <h3>Informasi Akun</h3>
+                <form id="profileForm" class="mt-lg">
+                    <div class="form-group">
+                        <label class="form-label">Nama Lengkap</label>
+                        <input type="text" id="editName" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Username</label>
+                        <input type="text" id="editUsername" class="form-input" disabled>
+                        <small class="text-muted">Username tidak dapat diubah.</small>
+                    </div>
+                    <button type="submit" class="btn btn-primary">💾 Simpan Perubahan</button>
+                </form>
+            </div>
+
+            <div class="glass-card">
+                <h3>Statistik Anda</h3>
+                 <div class="stat-row mt-lg">
+                    <div class="stat-box"><div class="stat-label">Transaksi Hari Ini</div><div class="stat-value" id="statTodayTrans">0</div></div>
+                    <div class="stat-box"><div class="stat-label">Total Transaksi</div><div class="stat-value" id="statTotalTrans">0</div></div>
+                    <div class="stat-box"><div class="stat-label">Bergabung Sejak</div><div class="stat-value font-sm" id="statJoinDate">-</div></div>
+                </div>
+            </div>
+            
+            <div class="glass-card">
+                <h3>Ubah Password</h3>
+                <form id="passwordForm" class="mt-lg">
+                    <div class="form-group">
+                        <label class="form-label">Password Lama</label>
+                        <input type="password" id="oldPassword" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Password Baru</label>
+                        <input type="password" id="newPassword" class="form-input" required minlength="6">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Konfirmasi Password Baru</label>
+                        <input type="password" id="confirmPassword" class="form-input" required minlength="6">
+                    </div>
+                    <button type="submit" class="btn btn-primary">🔐 Ubah Password</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/storage.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/layout.js"></script>
+    <script src="js/profile.js"></script>
+</body>
+</html>

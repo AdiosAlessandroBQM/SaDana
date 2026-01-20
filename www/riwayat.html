@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riwayat Penjualan - Sistem Stok Warung</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <a href="dashboard.html" class="app-logo">
+                <span class="app-logo-icon">🏪</span>
+                <span>Stok Warung</span>
+            </a>
+        </div>
+        <nav class="sidebar-nav">
+            <a href="dashboard.html" class="nav-item"><span class="nav-icon">📊</span><span>Dashboard</span></a>
+            <a href="kasir.html" class="nav-item"><span class="nav-icon">💰</span><span>Kasir</span></a>
+            <a href="menu.html" class="nav-item"><span class="nav-icon">📦</span><span>Data Menu</span></a>
+            <a href="riwayat.html" class="nav-item active"><span class="nav-icon">📜</span><span>Riwayat</span></a>
+        </nav>
+        <div class="sidebar-footer">
+             <div class="user-dropdown" id="userDropdown">
+                <a href="profile.html" class="dropdown-item">👤 Profil Saya</a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item" id="dropdownLogout">🚪 Logout</a>
+            </div>
+            <div class="user-info" id="userInfoBtn">
+                <div class="user-avatar" id="userAvatar"></div>
+                <div class="user-details">
+                    <div class="user-name" id="userName"></div>
+                    <div class="user-role">Kasir</div>
+                </div>
+                <span>⌄</span>
+            </div>
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <h1 class="page-title">Riwayat Penjualan</h1>
+
+        <div class="stats-row">
+            <div class="revenue-card">
+                <div class="revenue-label">💰 Total Pemasukan</div>
+                <div class="revenue-value" id="totalRevenue">Rp 0</div>
+            </div>
+            <div class="glass-card">
+                <div class="revenue-label text-secondary">📋 Total Transaksi</div>
+                <div class="revenue-value text-primary" id="totalTransactions">0</div>
+            </div>
+            <div class="glass-card">
+                <div class="revenue-label text-secondary">📊 Rata-rata Transaksi</div>
+                <div class="revenue-value text-primary" id="avgTransaction">Rp 0</div>
+            </div>
+        </div>
+
+        <div class="glass-card">
+            <div class="filters-row">
+                <button class="btn btn-primary btn-sm" id="todayBtn">📅 Hari Ini</button>
+                <button class="btn btn-secondary btn-sm" id="weekBtn">📅 7 Hari</button>
+                <button class="btn btn-secondary btn-sm" id="monthBtn">📅 30 Hari</button>
+                <button class="btn btn-secondary btn-sm" id="allBtn">📅 Semua</button>
+                <input type="date" id="startDate" class="form-input">
+                <input type="date" id="endDate" class="form-input">
+                <button class="btn btn-secondary btn-sm" id="filterBtn">🔍 Filter</button>
+            </div>
+        </div>
+
+        <div class="glass-card" style="margin-top: 1.5rem;">
+            <h2 style="margin-bottom: 1rem;">Daftar Transaksi</h2>
+            <div id="transactionsList"></div>
+        </div>
+    </main>
+
+    <div class="modal" id="detailModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Detail Transaksi</h2>
+                <button class="modal-close" id="closeDetailBtn">&times;</button>
+            </div>
+            <div id="detailContent"></div>
+        </div>
+    </div>
+
+    <script src="js/storage.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/layout.js"></script>
+    <script src="js/riwayat.js"></script>
+</body>
+</html>
