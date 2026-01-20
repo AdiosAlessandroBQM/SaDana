@@ -57,4 +57,3 @@
 </div>
 
 ---
-   cd sadana-app
