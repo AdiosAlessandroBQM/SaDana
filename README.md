@@ -57,11 +57,4 @@
 </div>
 
 ---
-
-## 🚀 Cara Menjalankan Aplikasi
-
-1. Pastikan Anda telah menginstal [Flutter](https://docs.flutter.dev/get-started/install) dan [Git](https://git-scm.com/downloads).
-2. Clone repositori ini:
-   ```bash
-   git clone https://github.com/[username_anda]/sadana-app.git
    cd sadana-app
