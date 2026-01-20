@@ -8,9 +8,6 @@
  [![MySQL](https://img.shields.io/badge/MySQL-Database-orange.svg?logo=mysql&logoColor=white)](https://www.mysql.com/)
  [![XAMPP](https://img.shields.io/badge/XAMPP-Environment-red.svg?logo=apache&logoColor=white)](https://www.apachefriends.org/)
  [![Laragon](https://img.shields.io/badge/Laragon-Environment-green.svg?logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iIzUyQkFCMSIgZD0iTTEyIDBDNS4zNyAwIDAgNS4zNyAwIDEyczUuMzcgMTIgMTIgMTJzMjQtNS4zNyAyNC0xMi01LjM3LTEyLTEyLTEyeiIvPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik0xNi41IDEyYzAgMS45My0xLjU3IDMuNS0zLjUgMy41cy0zLjUtMS41Ny0zLjUtMy41IDEuNTctMy41IDMuNS0zLjUgMy41IDEuNTcgMy41IDMuNXoiLz48L3N2Zz4=)](https://laragon.org/)
- [![License](https://img.shields.io/github/license/sadana/sadana-app)](LICENSE)
- [![Version](https://img.shields.io/github/package-json/v/sadana/sadana-app)](https://github.com/sadana/sadana-app/releases)
-
 </div>
 
 ---
