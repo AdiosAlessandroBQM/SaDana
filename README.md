@@ -41,19 +41,3 @@
 - **[Intl](https://pub.dev/packages/intl):** Format lokal (misalnya, format mata uang Rupiah).
 
 ---
-
-## 📱 Pratinjau UI
-
-<div align="center">
-
-| Login Screen | Dashboard | Kasir |
-|:---:|:---:|:---:|
-| ![Login Screen](https://via.placeholder.com/300/1F2937/FFFFFF?text=Login+Screen) | ![Dashboard](https://via.placeholder.com/300/1F2937/FFFFFF?text=Dashboard) | ![Kasir](https://via.placeholder.com/300/1F2937/FFFFFF?text=Kasir) |
-
-| Data Menu | Riwayat Penjualan |
-|:---:|:---:|
-| ![Data Menu](https://via.placeholder.com/300/1F2937/FFFFFF?text=Data+Menu) | ![Riwayat](https://via.placeholder.com/300/1F2937/FFFFFF?text=Riwayat) |
-
-</div>
-
----
