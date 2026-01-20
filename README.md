@@ -56,8 +56,6 @@
 
 </div>
 
-*(Catatan: Gambar di atas adalah placeholder. Gantilah dengan screenshot asli dari aplikasi Anda.)*
-
 ---
 
 ## 🚀 Cara Menjalankan Aplikasi
